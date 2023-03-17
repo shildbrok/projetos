@@ -3,8 +3,7 @@ import './App.css';
 import Home from './pages/Home'
 import About from './pages/About'
 
-import {BrowserRouter, Router, Route} from 'react-router-dom'
-
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
@@ -13,10 +12,10 @@ function App() {
       <h1>Olá Robert, Sid, e Irmãos Jujudson's</h1>
       <h2 className="subtitle">aqui é o teste</h2>
       <BrowserRouter>
-        <Router>
+        <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/" element={<About/>}/>
-        </Router>
+          <Route path="/about" element={<About/>}/>
+        </Routes>
       </BrowserRouter>
     </div>
     
