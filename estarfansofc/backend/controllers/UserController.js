@@ -12,3 +12,11 @@ const generateToken = (id) => {
         expiresIn: "7d",
     })
 }
+
+const register = async (res, req) => {
+    res.send("Registro")
+}
+
+module.exports = {
+    register,
+}

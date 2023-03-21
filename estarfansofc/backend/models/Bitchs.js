@@ -1,4 +1,4 @@
-const mongoose = "mongoose"
+const mongoose = ("mongoose")
 const {Schema} = mongoose
 
 const bitchSchema = new Schema({
